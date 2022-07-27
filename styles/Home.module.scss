@@ -1,0 +1,152 @@
+.container {
+  padding: 10px;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  justify-content: center;
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-rows: 80px 1fr;
+  max-width: 1200px;
+
+  input {
+    padding-left: 10px;
+    min-width: 80%;
+    height: 30px;
+    background-color: rgba(0, 0, 0, 0.05);
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    border-radius: 20px;
+    text-align: center;
+    margin-bottom: 25px;
+
+
+    &:focus {
+      outline-color: rgba(0, 0, 255, 0.5);
+    }
+  }
+}
+
+.listbeers {
+  gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  height: 100%;
+  overflow: auto;
+  width: 100%;
+  justify-content: center;
+
+  &::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+.beercard {
+
+  max-width: 250px;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  border-radius: 10px;
+  padding: 10px;
+
+  &:hover {
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.02);
+    box-shadow: -8px -5px 13px -5px rgba(34, 60, 80, 0.33);
+  }
+}
+
+.bigContainer {
+  display: flex;
+  justify-content: center;
+
+}
+
+.beerBig {
+  margin-top: 30px;
+  position: relative;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid rgba(0, 0, 255, 0.2);
+  max-width: 1200px;
+
+  h1 {
+    margin-bottom: 5px;
+  }
+
+  p {
+    margin-top: 0;
+    margin-bottom: 40px;
+
+    font-size: 25px;
+  }
+
+  button {
+    position: absolute;
+    max-width: 80px;
+    top: 25px;
+    left: 20px;
+    background-color: rgba(0, 0, 255, 0.1);
+    padding: 5px;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    color: rgba(0, 0, 0, 0.7);
+    border-radius: 10px;
+
+    &:hover {
+      box-shadow: -5px -3px 3px -3px rgba(34, 60, 80, 0.33);
+    }
+    &:active {
+      transform: scale(0.95);
+    }
+  }
+
+  img {
+    max-height: 500px;
+    left: 95px;
+    top: 95px;
+    margin-bottom: 20px;
+  }
+}
+
+.title {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 30px;
+  border-top: 1px solid rgba(0, 0, 255, 0.2);
+  p:nth-child(1) {
+    text-align: start;
+    font-weight: bolder;
+  }
+}
+
+.tableContainer {
+  position: absolute;
+  top: 240px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  gap: 400px;
+
+  table {
+    border-collapse: collapse;
+    border: 1px solid rgba(0, 0, 255, 0.2);
+    min-width: 200px;
+  }
+
+  td {
+    padding: 10px;
+  }
+
+  tr:nth-child(1) {
+    border-bottom: 1px solid rgba(0, 0, 255, 0.2);
+  }
+
+
+}
+
