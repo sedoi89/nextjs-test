@@ -89,7 +89,7 @@
   button {
     position: absolute;
     max-width: 80px;
-    top: 25px;
+    top: 70px;
     left: 20px;
     background-color: rgba(0, 0, 255, 0.1);
     padding: 5px;
@@ -157,5 +157,12 @@
     position: static;
     gap: 0;
     justify-content: space-between;
+  }
+}
+@media (max-width: 375px) {
+  .beerBig {
+    button {
+      display: none;
+    }
   }
 }
