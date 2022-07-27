@@ -134,13 +134,14 @@ $border: 1px solid rgba(0, 0, 255, 0.2);
   top: 240px;
   width: 100%;
   display: flex;
-  justify-content: center;
-  gap: 400px;
+  justify-content: space-between;
+
 
   table {
     border-collapse: collapse;
     border: $border;
     min-width: 200px;
+    margin: 10px;
   }
 
   td {
