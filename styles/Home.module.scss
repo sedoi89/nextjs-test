@@ -150,3 +150,10 @@
 
 }
 
+@media (max-width: 849px) {
+  .tableContainer {
+    position: static;
+    gap: 0;
+    justify-content: space-between;
+  }
+}
