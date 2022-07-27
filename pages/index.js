@@ -140,8 +140,11 @@ export default function Home({pageData}) {
         <div className={styles.container}>
 
             <main className={styles.main}>
-                <h1> Beers list</h1>
-                <input type={"text"} value={beerName} onChange={changeBeerName} placeholder={'Check me'}></input>
+                <div>
+                    <h1> Beers list</h1>
+                    <input type={"text"} value={beerName} onChange={changeBeerName} placeholder={'Check me'}></input>
+                </div>
+
                 <div ref={scrollContainerRef} className={styles.listbeers}>
                     {
                         render()
